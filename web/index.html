@@ -1,0 +1,1345 @@
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="StylingSheet.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body onclick >
+        Creating navbar to login or signup below:
+        <div class="header">
+            <nav class="headerNav">
+                <ul id="introNav">
+                    Linking the nav bar to other HTML pages below:
+                    <li class="liStyle">||</li>
+                    <li class="liStyle">
+                        <div id="navBarButton" class="dropdown">
+                            <button class="buttonStyle" id="navBarButton"> &nbsp;&nbsp; GRADE LEVELS &nbsp;&nbsp;</button>
+                            <div class="grade-dropdown-content" id="navBarColor">
+                                <a class="aStyle" href="firstClasses.jsp">First Grade</a>
+                                <a class="aStyle" href="secondClasses.jsp">Second Grade</a>
+                                <a class="aStyle" href="thirdClasses.jsp">Third Grade</a>
+                                <a class="aStyle" href="fourthClasses.jsp">Fourth Grade</a>
+                                <a class="aStyle" href="fifthClasses.jsp">Fifth Grade</a>
+                                <a class="aStyle" href="sixthClasses.jsp">Sixth Grade</a>
+                                <a class="aStyle" href="seventhClasses.jsp">Seventh Grade</a>
+                                <a class="aStyle" href="eighthClasses.jsp">Eighth Grade</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="liStyle">||</li>
+                    <li id="logoStuffs">
+                        <input id="logoImage" type="image" src="StudentPowerWritingLogo.png" onclick="location.href = 'index.html'"/>
+                    </li>
+                    <li class="liStyle">||</li>
+                    <li class="liStyle">
+                        <div id="navBarButton" class="dropdown">
+                            <button class="buttonStyle" id="navBarButton"> &nbsp;&nbsp; LOGIN &nbsp;&nbsp;</button>
+                            <div class="login-dropdown-content" id="navBarColor">
+                                <a class="aStyle" href="#studentlogin">Student</a>
+                                <a class="aStyle" href="#tutorlogin">Tutor</a>
+                                <a class="aStyle" href="#parentlogin">Parent</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="liStyle">||</li>
+                                        <li class="liStyle">
+                                            <div id="navBarButton" class="dropdown">
+                                                <button class="buttonStyle" id="navBarButton"> &nbsp;&nbsp; SIGN UP &nbsp;&nbsp;</button>
+                                                <div class="sign-dropdown-content" id="navBarColor">
+                                                    <a class="aStyle" href="#studentsign">Student</a>
+                                                    <a class="aStyle" href="#tutorsign">Tutor</a>
+                                                    <a class="aStyle" href="#parentsign">Parent</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="liStyle">||</li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>SIGN UP</h1>
+        <h2>EVERYTHING STARTS WITH A CLICK</h2>
+        <form name="signupstudent" method="POST">
+            <a href="#studentsign">STUDENT</a>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form name="signuptutor" method="POST">
+            <a href="#tutorsign">TUTOR</a>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form name="signupparent" method="POST">
+            <a href="#parentsign">PARENT</a>
+        </form>
+        <div id="studentsign" class="overlay">
+            <div class="popup">
+                <h2>SIGN UP BOX</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    Creating area for user to type in data below:
+                    <form action="studentSignUp" method="POST">
+                        FIRST NAME: <br><input type="text" name="createFirst"/>
+                        <br>
+                        <br>
+                        LAST NAME: <br><input type="text" name="createLast"/>
+                        <br>
+                        <br>
+                        GRADE LEVEL: <br><input style="width: 180px" type="number" name="gradeLevel" min="1" max="8" size="30"/>
+                        <br>
+                        <br>
+                        EMAIL: <br><input type="text" name="enterEmail"/>
+                        <br>
+                        <br>
+                        NEW USER NAME: <br><input type="text" name="createUserName"/>
+                        <br>
+                        <br>
+                        NEW PASSWORD: <br><input type="password" name="createPassword"/>
+                        <br>
+                        <br>
+                        CONFIRM PASSWORD: <br><input type="password" name="confirmPassword"/>
+                        <br>
+                        <br>
+                        CHOOSE YOUR AVATAR: <br><br>
+                        <div id="countries">
+                            <br>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="001.png" checked>
+                                <img class="dropImg" src="001.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="002.png">
+                                <img class="dropImg" src="002.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="003.png" checked>
+                                <img class="dropImg" src="003.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="004.png">
+                                <img class="dropImg" src="004.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="005.png" checked>
+                                <img class="dropImg" src="005.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="006.png">
+                                <img class="dropImg" src="006.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="007.png" checked>
+                                <img class="dropImg" src="007.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="008.png">
+                                <img class="dropImg" src="008.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="009.png" checked>
+                                <img class="dropImg" src="009.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="010.png">
+                                <img class="dropImg" src="010.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="011.png" checked>
+                                <img class="dropImg" src="011.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="012.png">
+                                <img class="dropImg" src="012.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="013.png" checked>
+                                <img class="dropImg" src="013.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="014.png">
+                                <img class="dropImg" src="014.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="015.png" checked>
+                                <img class="dropImg" src="015.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="016.png">
+                                <img class="dropImg" src="016.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="017.png" checked>
+                                <img class="dropImg" src="017.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="018.png">
+                                <img class="dropImg" src="018.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="019.png" checked>
+                                <img class="dropImg" src="019.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="020.png">
+                                <img class="dropImg" src="020.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="021.png" checked>
+                                <img class="dropImg" src="021.png">
+                            </label>
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                        Creating button to send data to servlet below:
+                        <input class="Sbutton" type="submit" value="SIGNUP"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="tutorsign" class="overlay">
+            <div class="popupBig">
+                <h2>SIGN UP BOX</h2>
+                <a class="close" href="#">&times;</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzS7eFGnQUz5IXP0Zp5srdmlw_SpsrHTYpVYbwODocr1TYCg/viewform?usp=sf_link" style="color: white" target="_blank">Can't see the form? Submit your application here.</a><div class="content"><br>
+                    Creating area for user to type in data below:
+                    https://docs.google.com/forms/d/e/1FAIpQLSdzS7eFGnQUz5IXP0Zp5srdmlw_SpsrHTYpVYbwODocr1TYCg/viewform?usp=sf_link
+                    <iframe style="width: 680px; height: 280px" src="https://docs.google.com/forms/d/e/1FAIpQLSdzS7eFGnQUz5IXP0Zp5srdmlw_SpsrHTYpVYbwODocr1TYCg/viewform?usp=sf_link" title="Tutor Sign Up Form"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="parentsign" class="overlay">
+            <div class="popup">
+                <h2>SIGN UP BOX</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    Creating area for user to type in data below:
+                    <form action="parentSignUp" method="POST">
+                        FIRST NAME: <br><input type="text" name="createFirst"/>
+                        <br>
+                        <br>
+                        LAST NAME: <br><input type="text" name="createLast"/>
+                        <br>
+                        <br>
+                        EMAIL: <br><input type="text" name="enterEmail"/>
+                        <br>
+                        <br>
+                        NEW USER NAME: <br><input type="text" name="createUserName"/>
+                        <br>
+                        <br>
+                        NEW PASSWORD: <br><input type="password" name="createPassword"/>
+                        <br>
+                        <br>
+                        CONFIRM PASSWORD: <br><input type="password" name="confirmPassword"/>
+                        <br>
+                        <br>
+                        CHILD'S USERNAME: <br><input type="text" name="childUser"/>
+                        <br>
+                        <br>
+                        CHILD'S PASSWORD: <br><input type="password" name="childPass"/>
+                        <br>
+                        <br>
+                        CHOOSE YOUR AVATAR: <br><br>
+                        <div id="countries">
+                            <br>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="044.png" checked>
+                                <img class="dropImg" src="044.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="045.png">
+                                <img class="dropImg" src="045.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="046.png" checked>
+                                <img class="dropImg" src="046.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="047.png">
+                                <img class="dropImg" src="047.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="048.png" checked>
+                                <img class="dropImg" src="048.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="049.png">
+                                <img class="dropImg" src="049.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="050.png" checked>
+                                <img class="dropImg" src="050.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="051.png">
+                                <img class="dropImg" src="051.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="052.png" checked>
+                                <img class="dropImg" src="052.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="053.png">
+                                <img class="dropImg" src="053.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="054.png" checked>
+                                <img class="dropImg" src="054.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="055.png">
+                                <img class="dropImg" src="055.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="056.png" checked>
+                                <img class="dropImg" src="056.png">
+                            </label>
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                        Creating button to send data to servlet below:
+                        <input class="Sbutton" type="submit" value="SIGNUP"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="studentlogin" class="overlay">
+            <div class="popup">
+                <h2>STUDENT LOGIN</h2>
+                <a class="close" href="#">&times;</a>
+                <a href="#studentsign" style="color: white">Don't have an account? Make one here.</a>
+                <div class="content">
+                    <br>
+                    Creating area for user to type in data below:
+                    <form action="studentLogIn" method="POST">
+                        USER NAME: <br><input type="text" name="studentUserName"/>
+                        <br>
+                        <br>
+                        PASSWORD:<br> <input type="password" name="studentPassword"/>
+                        <br>
+                        <a href="#studentforgot" style="color: white">Forgot Password?</a>
+                        <br>
+                        <br>
+                        Creating button to send data to servlet below:
+                        <input class="Sbutton" type="submit" value="LOGIN"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="tutorlogin" class="overlay">
+            <div class="popup">
+                <h2>TUTOR LOGIN</h2>
+                <a class="close" href="#">&times;</a>
+                <a href="#tutorsign" style="color: white">Don't have an account? Make one here.</a>
+                <div class="content">
+                    <br>
+                    Creating area for user to type in data below:
+                    <form action="tutorLogIn" method="POST">
+                        USER NAME: <br><input type="text" name="tutorUserName"/>
+                        <br>
+                        <br>
+                        PASSWORD:<br> <input type="password" name="tutorPassword"/>
+                        <br>
+                        <a href="#tutorforgot" style="color: white">Forgot Password?</a>
+                        <br>
+                        <br>
+                        Creating button to send data to servlet below:
+                        <input class="Sbutton" type="submit" value="LOGIN"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="parentlogin" class="overlay">
+            <div class="popup">
+                <h2>PARENT LOGIN</h2>
+                <a class="close" href="#">&times;</a>
+                <a href="#parentsign" style="color: white">Don't have an account? Make one here.</a>
+                <div class="content">
+                    <br>
+                    Creating area for user to type in data below:
+                    <form action="parentLogIn" method="POST">
+                        USER NAME: <br><input type="text" name="parentUserName"/>
+                        <br>
+                        <br>
+                        PASSWORD:<br> <input type="password" name="parentPassword"/>
+                        <br>
+                        <a href="#parentforgot" style="color: white">Forgot Password?</a>
+                        <br>
+                        <br>
+                        Creating button to send data to servlet below:
+                        <input class="Sbutton" type="submit" value="LOGIN"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="studentforgot" class="overlay">
+            <div class="popup">
+                <h2>PASSWORD RESET</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <br>
+                    Creating area for user to type in data below:
+                    <form action="studentForgotPassword" method="POST">
+                        ENTER THE EMAIL ASSOCIATED WITH YOUR STUDENT ACCOUNT: <br><input type="text" name="forgotPassword"/>
+                        <br>
+                        <br>
+                        Creating button to send data to servlet below:
+                        <input class="Sbutton" type="submit" value="SUBMIT"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="tutorforgot" class="overlay">
+            <div class="popup">
+                <h2>PASSWORD RESET</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <br>
+                    Creating area for user to type in data below:
+                    <form action="tutorForgotPassword" method="POST">
+                        ENTER THE EMAIL ASSOCIATED WITH YOUR TUTOR ACCOUNT: <br><input type="text" name="forgotPassword"/>
+                        <br>
+                        <br>
+                        Creating button to send data to servlet below:
+                        <input class="Sbutton" type="submit" value="SUBMIT"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="parentforgot" class="overlay">
+            <div class="popup">
+                <h2>PASSWORD RESET</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <br>
+                    Creating area for user to type in data below:
+                    <form action="parentForgotPassword" method="POST">
+                        ENTER THE EMAIL ASSOCIATED WITH YOUR PARENT ACCOUNT: <br><input type="text" name="forgotPassword"/>
+                        <br>
+                        <br>
+                        Creating button to send data to servlet below:
+                        <input class="Sbutton" type="submit" value="SUBMIT"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Power</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="StylingSheet.css"/>
+        <link rel="stylesheet" type="text/css" href="css/homepage.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body onclick >
+        <!--Creating navbar to login or signup below:-->
+
+        <div class="navbar">
+            <nav class="navbar__nav">
+                <div class="navbar__dropdown navbar__dropdown--grades">
+                    <p class="navbar__grades">Grades <span class="arrow-down"></span></p>
+                    <div class="navbar__grades-content">
+                        <a class="navbar__link" href="firstClasses.jsp">First Grade</a>
+                        <div class="divider"></div>
+                        <a class="navbar__link" href="secondClasses.jsp">Second Grade</a>
+                        <div class="divider"></div>
+                        <a class="navbar__link" href="thirdClasses.jsp">Third Grade</a>
+                        <div class="divider"></div>
+                        <a class="navbar__link" href="fourthClasses.jsp">Fourth Grade</a>
+                        <div class="divider"></div>
+                        <a class="navbar__link" href="fifthClasses.jsp">Fifth Grade</a>
+                        <div class="divider"></div>
+                        <a class="navbar__link" href="sixthClasses.jsp">Sixth Grade</a>
+                        <div class="divider"></div>
+                        <a class="navbar__link" href="seventhClasses.jsp">Seventh Grade</a>
+                        <div class="divider"></div>
+                        <a class="navbar__link" href="eighthClasses.jsp">Eighth Grade</a>
+                    </div>
+                </div>
+                <input class="navbar__logo" type="image" src="StudentPowerWritingLogo.png" alt="Student Power Logo" onclick="location.href = 'index.html'"/>
+                <div class="navbar__buttons">
+                    <div class="navbar__dropdown navbar__dropdown--login">
+                        <p class="navbar__login">Login <span class="arrow-down"></span></p>
+                        <div class="navbar__login-content">
+                            <a class="navbar__link" href="#studentlogin">Student</a>
+                            <div class="divider"></div>
+                            <a class="navbar__link" href="#tutorlogin">Tutor</a>
+                            <div class="divider"></div>
+                            <a class="navbar__link" href="#parentlogin">Parent</a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Student Power is an interactive platform that offers students, parents, and tutors easy access to sign up for live online tutoring classes</h1>
+                <div class="hero__text">Sign Up Now</div>
+                <div class="hero__buttons">
+                    <form name="signupstudent" method="POST">
+                        <a class="hero__button" href="#studentsign">STUDENT</a>
+                    </form>
+                    <form name="signuptutor" method="POST">
+                        <a class="hero__button" href="#tutorsign">TUTOR</a>
+                    </form>
+                    <form name="signupparent" method="POST">
+                        <a class="hero__button" href="#parentsign">PARENT</a>
+                    </form>
+                </div>
+            </div>
+            <img src="images/Nino.png" alt="Boy" class="hero__image">
+        </section>
+
+        <section class="whyus">
+            <div class="divider"></div>
+            <br>
+            <h2 class="whyus__title">Our Team</h2>
+            <br>
+            <div class="divider"></div>
+            <div class="whyus__cards-container">
+                <div class="whyus__card">
+                    <img src="images/juan.jpg" alt="Juan" class="whyus__card-image">
+                    <p class="whyus__card-text">Hi! My name is Juan Rodriguez, and I am originally from Colombia. I am an Entrepreneurship Diploma Candidate senior at The Village School and one of the Founders and CEO of Student Power.</p>
+                </div>
+
+                <div class="whyus__card">
+                    <img src="images/emi.jpg" alt="Emiliano" class="whyus__card-image">
+                    <p class="whyus__card-text">Hello everyone! My name is Emiliano Lovato Mauri. I have lived all over the world, but I am from Argentina. I am an IB Diploma Candidate senior at The Village School and am one of the founders and the COO of Student Power.</p>
+                </div>
+
+                <div class="whyus__card">
+                    <img src="images/dhruv.jpg" alt="Dhruv" class="whyus__card-image">
+                    <p class="whyus__card-text">Hey! My name is Dhruv Saligram, and I'm a full IB Diploma Candidate senior. I'm the Website Developer for Student Power, and I built the website that you're currently viewing from scratch!</p>
+                </div>
+            </div>
+            <div class="whyus__cards-container">
+                <div class="whyus__card">
+                    <img src="images/danoush.jpg" alt="Danoush" class="whyus__card-image">
+                    <p class="whyus__card-text">My name is Danoush Mohasel and I am originally from Iran. I am a senior and my position in Student Power is the Business Developer. I am looking forward to new challenges and building relationships through Student Power.</p>
+                </div>
+
+                <div class="whyus__card">
+                    <img src="images/marcos.jpg" alt="Marcos" class="whyus__card-image">
+                    <p class="whyus__card-text">Hello, my name is Marcos Ortiz de la Pena and I’m the marketing manager and digital designer of Student Power. I'm a senior in The Village School, and I’m a full IB Diploma Candidate.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="whyus">
+            <div class="divider"></div>
+            <br>
+            <h2 class="whyus__title">Why Student Power Works</h2>
+            <br>
+            <div class="divider"></div>
+            <div class="whyus__cards-container">
+                <div class="whyus__card">
+                    <img src="images/question.png" alt="Questions" class="whyus__card-image">
+                    <p class="whyus__card-text">We created a system where middle and elementary students are provided with one-on-one tutoring from high school students</p>
+                </div>
+
+                <div class="whyus__card">
+                    <img src="images/video-conference.png" alt="Video Conference" class="whyus__card-image">
+                    <p class="whyus__card-text">High school students who give their time to tutor will be rewarded with community service hours</p>
+                </div>
+
+                <div class="whyus__card">
+                    <img src="images/agreement.png" alt="Agreement" class="whyus__card-image">
+                    <p class="whyus__card-text">Student Power is an interactive platform that offers easy access to students, parents, and tutors</p>
+                </div>
+            </div>
+            <!--<br>-->
+            <!--<div class="divider"></div>-->
+        </section>
+
+        <section class="quote">
+            <img src="images/Malcolm.png" alt="Malcolm X" class="quote__image">
+            <h3 class="quote__text">"Education is the passport to the future, for tomorrow belongs to those who prepare for it today." <span>-Malcolm X</span></h3>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__column">
+                    <p class="footer__text">Social Media</p>
+                    <a href="https://www.facebook.com/StudentPower021/" target="_blank" class="footer__link">Facebook</a>
+                    <a href="https://twitter.com/studentpower21/" target="_blank" class="footer__link">Twitter</a>
+                    <a href="https://www.instagram.com/studentpower21/" target="_blank" class="footer__link">Instagram</a>
+                    <a href="https://www.youtube.com/channel/UCM6-Vd9N3meVImc037EIZzg/" target="_blank" class="footer__link">Youtube</a>
+                    <input type="text" style="display: none; visibility: hidden" name="userName" id="userTexting" value="studentpower21@gmail.com">
+                    <input type="text" style="display: none; visibility: hidden" name="header" id="headerTexting" value="">
+                    <input type="text" style="display: none; visibility: hidden" name="message" id="messageText" value="">
+                    <button style="color: black; border: none; background: none" class="footer_link" onclick="sendMail(); return false">Email</button>
+                </div>
+
+                <div class="footer__column">
+                    <p class="footer__text">Sign Up now!</p>
+                    <form name="signupstudent" method="POST">
+                        <a class="footer__link" href="#studentsign">STUDENT</a>
+                    </form>
+                    <form name="signuptutor" method="POST">
+                        <a class="footer__link" href="#tutorsign">TUTOR</a>
+                    </form>
+                    <form name="signupparent" method="POST">
+                        <a class="footer__link" href="#parentsign">PARENT</a>
+                    </form>
+                </div>
+
+                <!--                <div class="footer__column">
+                                    <p class="footer__text">More Information</p>
+                                    <a href="" class="footer__link">About</a>
+                                    <a href="" class="footer__link">Our Team</a>
+                                    <a href="" class="footer__link">Internships</a>
+                                    <a href="" class="footer__link">Leaderships</a>
+                                    <a href="" class="footer__link">Hours</a>
+                                </div>-->
+
+                <div class="footer__column">
+                    <p class="footer__text">Courses</p>
+                    <a href="firstMath.jsp" class="footer__link">Math</a>
+                    <a href="firstEnglish.jsp" class="footer__link">English</a>
+                    <a href="firstSocial.jsp" class="footer__link">Social Studies</a>
+                    <a href="firstScience.jsp" class="footer__link">Science</a>
+                    <a href="firstLanguage.jsp" class="footer__link">Languages</a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <div id="studentsign" class="overlay">
+            <div class="popup">
+                <h2>SIGN UP BOX</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <!--Creating area for user to type in data below:-->
+                    <form action="studentSignUp" method="POST">
+                        FIRST NAME: <br><input type="text" name="createFirst"/>
+                        <br>
+                        <br>
+                        LAST NAME: <br><input type="text" name="createLast"/>
+                        <br>
+                        <br>
+                        GRADE LEVEL: <br><input style="width: 180px" type="number" name="gradeLevel" min="1" max="8" size="30"/>
+                        <br>
+                        <br>
+                        EMAIL: <br><input type="text" name="enterEmail"/>
+                        <br>
+                        <br>
+                        NEW USER NAME: <br><input type="text" name="createUserName"/>
+                        <br>
+                        <br>
+                        NEW PASSWORD: <br><input type="password" name="createPassword"/>
+                        <br>
+                        <br>
+                        CONFIRM PASSWORD: <br><input type="password" name="confirmPassword"/>
+                        <br>
+                        <br>
+                        CHOOSE YOUR AVATAR: <br><br>
+                        <div id="countries">
+                            <br>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="001.png" checked>
+                                <img class="dropImg" src="001.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="002.png">
+                                <img class="dropImg" src="002.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="003.png" checked>
+                                <img class="dropImg" src="003.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="004.png">
+                                <img class="dropImg" src="004.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="005.png" checked>
+                                <img class="dropImg" src="005.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="006.png">
+                                <img class="dropImg" src="006.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="007.png" checked>
+                                <img class="dropImg" src="007.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="008.png">
+                                <img class="dropImg" src="008.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="009.png" checked>
+                                <img class="dropImg" src="009.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="010.png">
+                                <img class="dropImg" src="010.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="011.png" checked>
+                                <img class="dropImg" src="011.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="012.png">
+                                <img class="dropImg" src="012.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="013.png" checked>
+                                <img class="dropImg" src="013.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="014.png">
+                                <img class="dropImg" src="014.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="015.png" checked>
+                                <img class="dropImg" src="015.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="016.png">
+                                <img class="dropImg" src="016.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="017.png" checked>
+                                <img class="dropImg" src="017.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="018.png">
+                                <img class="dropImg" src="018.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="019.png" checked>
+                                <img class="dropImg" src="019.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="020.png">
+                                <img class="dropImg" src="020.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="021.png" checked>
+                                <img class="dropImg" src="021.png">
+                            </label>
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <hr>
+                        <input type="checkbox" name="terms" value="TERM">
+                        <label for="terms"> By checking this box, you affirm that you have read and agree to our </label> <a href="working.html" target="_blank">Terms and Conditions</a><br><hr>
+                        <input type="checkbox" name="privacy" value="PRIVATE">
+                        <label for="privacy"> By checking this box, you affirm that you have read and agree to our </label> <a href="working.html" target="_blank">Privacy Policy</a><br><hr>
+                        <!--Creating button to send data to servlet below:-->
+                        <input class="Sbutton" type="submit" value="SIGNUP"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="tutorsign" class="overlay">
+            <div class="popupBig">
+                <h2>SIGN UP BOX</h2>
+                <a class="close" href="#">&times;</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzS7eFGnQUz5IXP0Zp5srdmlw_SpsrHTYpVYbwODocr1TYCg/viewform?usp=sf_link" style="color: white" target="_blank">Can't see the form? Submit your application here.</a>
+                <div class="content">
+                    <br>
+                    <!--Creating area for user to type in data below:-->
+                    <iframe style="width: 680px; height: 280px" src="https://docs.google.com/forms/d/e/1FAIpQLSdzS7eFGnQUz5IXP0Zp5srdmlw_SpsrHTYpVYbwODocr1TYCg/viewform?usp=sf_link" title="Tutor Sign Up Form"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="parentsign" class="overlay">
+            <div class="popup">
+                <h2>SIGN UP BOX</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <br>
+                    <!--Creating area for user to type in data below:-->
+                    <a href="#parentsign1" style="text-decoration: none">
+                        <div class="Sbutton" style="text-decoration: none; padding: 10px">
+                            <p style="text-decoration: none">My child already has an account</p>
+                        </div>
+                    </a>
+                    <br>
+                    <a href="#parentsign2" style="text-decoration: none">
+                        <div class="Sbutton" style="text-decoration: none; padding: 10px">
+                            <p style="text-decoration: none">My child does not have an account yet</p>
+                        </div>
+                    </a>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div id="parentsign1" class="overlay">
+            <div class="popup">
+                <h2>SIGN UP BOX</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <!--Creating area for user to type in data below:-->
+                    <form action="parentSignUp" method="POST">
+                        FIRST NAME: <br><input type="text" name="createFirst"/>
+                        <br>
+                        <br>
+                        LAST NAME: <br><input type="text" name="createLast"/>
+                        <br>
+                        <br>
+                        EMAIL: <br><input type="text" name="enterEmail"/>
+                        <br>
+                        <br>
+                        NEW USER NAME: <br><input type="text" name="createUserName"/>
+                        <br>
+                        <br>
+                        NEW PASSWORD: <br><input type="password" name="createPassword"/>
+                        <br>
+                        <br>
+                        CONFIRM PASSWORD: <br><input type="password" name="confirmPassword"/>
+                        <br>
+                        <br>
+                        CHOOSE YOUR AVATAR: <br><br>
+                        <div id="countries">
+                            <br>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="044.png" checked>
+                                <img class="dropImg" src="044.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="045.png">
+                                <img class="dropImg" src="045.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="046.png" checked>
+                                <img class="dropImg" src="046.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="047.png">
+                                <img class="dropImg" src="047.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="048.png" checked>
+                                <img class="dropImg" src="048.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="049.png">
+                                <img class="dropImg" src="049.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="050.png" checked>
+                                <img class="dropImg" src="050.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="051.png">
+                                <img class="dropImg" src="051.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="052.png" checked>
+                                <img class="dropImg" src="052.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="053.png">
+                                <img class="dropImg" src="053.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="054.png" checked>
+                                <img class="dropImg" src="054.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="055.png">
+                                <img class="dropImg" src="055.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="056.png" checked>
+                                <img class="dropImg" src="056.png">
+                            </label>
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                        (Please enter your child's existing account information)<br><br>
+                        CHILD'S USERNAME: <br><input type="text" name="childUser"/>
+                        <br>
+                        <br>
+                        CHILD'S PASSWORD: <br><input type="password" name="childPass"/>
+                        <br>
+                        <br>
+                        <!--Creating button to send data to servlet below:-->
+                        <input class="Sbutton" type="submit" value="SIGNUP"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="parentsign2" class="overlay">
+            <div class="popup">
+                <h2>SIGN UP BOX</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <!--Creating area for user to type in data below:-->
+                    <form action="parentSignUpWithChild" method="POST">
+                        <hr>
+                        <br>
+                        <p class="whereText">CREATE YOUR PARENT ACCOUNT</p>
+                        <hr>
+                        <br>
+                        YOUR FIRST NAME: <br><input type="text" name="createFirst"/>
+                        <br>
+                        <br>
+                        YOUR LAST NAME: <br><input type="text" name="createLast"/>
+                        <br>
+                        <br>
+                        YOUR EMAIL: <br><input type="text" name="enterEmail"/>
+                        <br>
+                        <br>
+                        YOUR NEW USER NAME: <br><input type="text" name="createUserName"/>
+                        <br>
+                        <br>
+                        YOUR NEW PASSWORD: <br><input type="password" name="createPassword"/>
+                        <br>
+                        <br>
+                        CONFIRM PASSWORD: <br><input type="password" name="confirmPassword"/>
+                        <br>
+                        <br>
+                        CHOOSE YOUR AVATAR: <br><br>
+                        <div id="countries">
+                            <br>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="044.png" checked>
+                                <img class="dropImg" src="044.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="045.png">
+                                <img class="dropImg" src="045.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="046.png" checked>
+                                <img class="dropImg" src="046.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="047.png">
+                                <img class="dropImg" src="047.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="048.png" checked>
+                                <img class="dropImg" src="048.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="049.png">
+                                <img class="dropImg" src="049.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="050.png" checked>
+                                <img class="dropImg" src="050.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="051.png">
+                                <img class="dropImg" src="051.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="052.png" checked>
+                                <img class="dropImg" src="052.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="053.png">
+                                <img class="dropImg" src="053.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="054.png" checked>
+                                <img class="dropImg" src="054.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="055.png">
+                                <img class="dropImg" src="055.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose" value="056.png" checked>
+                                <img class="dropImg" src="056.png">
+                            </label>
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                        <hr>
+                        <br>
+                        <p class="whereText">CREATE YOUR CHILD'S ACCOUNT</p>
+                        <hr>
+                        <br>
+                        CHILD'S FIRST NAME: <br><input type="text" name="createFirst1"/>
+                        <br>
+                        <br>
+                        CHILD'S LAST NAME: <br><input type="text" name="createLast1"/>
+                        <br>
+                        <br>
+                        CHILD'S GRADE LEVEL: <br><input style="width: 180px" type="number" name="gradeLevel1" min="1" max="8" size="30"/>
+                        <br>
+                        <br>
+                        CHILD'S EMAIL: <br><input type="text" name="enterEmail1"/>
+                        <br>
+                        <br>
+                        CHILD'S NEW USER NAME: <br><input type="text" name="createUserName1"/>
+                        <br>
+                        <br>
+                        CHILD'S NEW PASSWORD: <br><input type="password" name="createPassword1"/>
+                        <br>
+                        <br>
+                        CONFIRM PASSWORD: <br><input type="password" name="confirmPassword1"/>
+                        <br>
+                        <br>
+                        CHOOSE THEIR AVATAR: <br><br>
+                        <div id="countries">
+                            <br>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="001.png" checked>
+                                <img class="dropImg" src="001.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="002.png">
+                                <img class="dropImg" src="002.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="003.png" checked>
+                                <img class="dropImg" src="003.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="004.png">
+                                <img class="dropImg" src="004.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="005.png" checked>
+                                <img class="dropImg" src="005.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="006.png">
+                                <img class="dropImg" src="006.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="007.png" checked>
+                                <img class="dropImg" src="007.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="008.png">
+                                <img class="dropImg" src="008.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="009.png" checked>
+                                <img class="dropImg" src="009.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="010.png">
+                                <img class="dropImg" src="010.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="011.png" checked>
+                                <img class="dropImg" src="011.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="012.png">
+                                <img class="dropImg" src="012.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="013.png" checked>
+                                <img class="dropImg" src="013.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="014.png">
+                                <img class="dropImg" src="014.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="015.png" checked>
+                                <img class="dropImg" src="015.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="016.png">
+                                <img class="dropImg" src="016.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="017.png" checked>
+                                <img class="dropImg" src="017.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="018.png">
+                                <img class="dropImg" src="018.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="019.png" checked>
+                                <img class="dropImg" src="019.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="020.png">
+                                <img class="dropImg" src="020.png">
+                            </label>
+
+                            <label>
+                                <input type="radio" name="avatarChoose1" value="021.png" checked>
+                                <img class="dropImg" src="021.png">
+                            </label>
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                        <!--Creating button to send data to servlet below:-->
+                        <input class="Sbutton" type="submit" value="SIGNUP"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="studentlogin" class="overlay">
+            <div class="popup">
+                <h2>STUDENT LOGIN</h2>
+                <a class="close" href="#">&times;</a>
+                <a href="#studentsign" style="color: white">Don't have an account? Make one here.</a>
+                <div class="content">
+                    <br>
+                    <!--Creating area for user to type in data below:-->
+                    <form action="studentLogIn" method="POST">
+                        USER NAME: <br><input type="text" name="studentUserName"/>
+                        <br>
+                        <br>
+                        PASSWORD:<br> <input type="password" name="studentPassword"/>
+                        <br>
+                        <a href="#studentforgot" style="color: white">Forgot Password?</a>
+                        <br>
+                        <br>
+                        <!--Creating button to send data to servlet below:-->
+                        <input class="Sbutton" type="submit" value="LOGIN"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="tutorlogin" class="overlay">
+            <div class="popup">
+                <h2>TUTOR LOGIN</h2>
+                <a class="close" href="#">&times;</a>
+                <a href="#tutorsign" style="color: white">Don't have an account? Make one here.</a>
+                <div class="content">
+                    <br>
+                    <!--Creating area for user to type in data below:-->
+                    <form action="tutorLogIn" method="POST">
+                        USER NAME: <br><input type="text" name="tutorUserName"/>
+                        <br>
+                        <br>
+                        PASSWORD:<br> <input type="password" name="tutorPassword"/>
+                        <br>
+                        <a href="#tutorforgot" style="color: white">Forgot Password?</a>
+                        <br>
+                        <br>
+                        <!--Creating button to send data to servlet below:-->
+                        <input class="Sbutton" type="submit" value="LOGIN"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="parentlogin" class="overlay">
+            <div class="popup">
+                <h2>PARENT LOGIN</h2>
+                <a class="close" href="#">&times;</a>
+                <a href="#parentsign" style="color: white">Don't have an account? Make one here.</a>
+                <div class="content">
+                    <br>
+                    <!--Creating area for user to type in data below:-->
+                    <form action="parentLogIn" method="POST">
+                        USER NAME: <br><input type="text" name="parentUserName"/>
+                        <br>
+                        <br>
+                        PASSWORD:<br> <input type="password" name="parentPassword"/>
+                        <br>
+                        <a href="#parentforgot" style="color: white">Forgot Password?</a>
+                        <br>
+                        <br>
+                        <!--Creating button to send data to servlet below:-->
+                        <input class="Sbutton" type="submit" value="LOGIN"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="studentforgot" class="overlay">
+            <div class="popup">
+                <h2>PASSWORD RESET</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <br>
+                    <!--Creating area for user to type in data below:-->
+                    <form action="studentForgotPassword" method="POST">
+                        ENTER THE EMAIL ASSOCIATED WITH YOUR STUDENT ACCOUNT: <br><input type="text" name="forgotPassword"/>
+                        <br>
+                        <br>
+                        <!--Creating button to send data to servlet below:-->
+                        <input class="Sbutton" type="submit" value="SUBMIT"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="tutorforgot" class="overlay">
+            <div class="popup">
+                <h2>PASSWORD RESET</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <br>
+                    <!--Creating area for user to type in data below:-->
+                    <form action="tutorForgotPassword" method="POST">
+                        ENTER THE EMAIL ASSOCIATED WITH YOUR TUTOR ACCOUNT: <br><input type="text" name="forgotPassword"/>
+                        <br>
+                        <br>
+                        <!--Creating button to send data to servlet below:-->
+                        <input class="Sbutton" type="submit" value="SUBMIT"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="parentforgot" class="overlay">
+            <div class="popup">
+                <h2>PASSWORD RESET</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <br>
+                    <!--Creating area for user to type in data below:-->
+                    <form action="parentForgotPassword" method="POST">
+                        ENTER THE EMAIL ASSOCIATED WITH YOUR PARENT ACCOUNT: <br><input type="text" name="forgotPassword"/>
+                        <br>
+                        <br>
+                        <!--Creating button to send data to servlet below:-->
+                        <input class="Sbutton" type="submit" value="SUBMIT"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
